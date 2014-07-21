@@ -31,8 +31,6 @@ function atto_count_strings_for_js() {
     global $PAGE;
 
     $strings = array(
-        'wordsinselection',
-        'lettersinselection',
         'wordsinalltext',
         'lettersinalltext',
         'countwordsandletters'
