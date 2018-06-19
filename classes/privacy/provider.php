@@ -14,16 +14,25 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+namespace atto_count\privacy;
+
+defined('MOODLE_INTERNAL') || die();
+
 /**
- * Strings for component 'atto_count', language 'en'.
+ * Privacy Subsystem for atto_count implementing null_provider.
  *
- * @package    atto_count
- * @copyright  2014 Damyon Wiese  <damyon@moodle.com>
+ * @copyright  2018 Mathieu Petit-Clair <mathieu@petitclair.ca>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+class provider implements \core_privacy\local\metadata\null_provider {
 
-$string['countwordsandletters'] = 'Word and letter counts';
-$string['lettersinalltext'] = 'Letters in text';
-$string['pluginname'] = 'Word count';
-$string['privacy:metadata'] = 'The atto_count plugin does not store any personal data.';
-$string['wordsinalltext'] = 'Words in text';
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}
