@@ -39,3 +39,13 @@ function atto_count_strings_for_js() {
     $PAGE->requires->strings_for_js($strings, 'atto_count');
 }
 
+
+/**
+ * Get icon mapping for font-awesome.
+ */
+function atto_count_get_fontawesome_icon_map() {
+    return [
+        'atto_count:icon' => 'fa-hashtag'
+    ];
+}
+

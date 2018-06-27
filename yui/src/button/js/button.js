@@ -33,8 +33,8 @@
 var COMPONENTNAME = 'atto_count',
     TEMPLATE = '' +
             '<form class="atto_form">' +
-            '<p><label class="sameline">{{get_string "wordsinalltext" component}}</label><span>{{allTextWords}}</span></p>' +
-            '<p><label class="sameline">{{get_string "lettersinalltext" component}}</label><span>{{allTextLetters}}</span></p>' +
+            '<p><label class="sameline">{{get_string "wordsinalltext" component}}</label> <span>{{allTextWords}}</span></p>' +
+            '<p><label class="sameline">{{get_string "lettersinalltext" component}}</label> <span>{{allTextLetters}}</span></p>' +
             '</form>';
 
 Y.namespace('M.atto_count').Button = Y.Base.create('button', Y.M.editor_atto.EditorPlugin, [], {
