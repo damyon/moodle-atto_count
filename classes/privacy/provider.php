@@ -14,6 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Privacy provider for atto_count plugin
+ *
+ * @copyright  2018 Mathieu Petit-Clair <mathieu@petitclair.ca>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 namespace atto_count\privacy;
 
 defined('MOODLE_INTERNAL') || die();
@@ -21,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 /**
  * Privacy Subsystem for atto_count implementing null_provider.
  *
+ * @package    atto_count
  * @copyright  2018 Mathieu Petit-Clair <mathieu@petitclair.ca>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
