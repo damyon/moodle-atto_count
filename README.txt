@@ -4,7 +4,7 @@ QUICK INSTALL
 =============
 Put this entire directory at:
 
-PATHTOMOODLE/lib/editors/atto/plugins/count
+PATHTOMOODLE/lib/editor/atto/plugins/count
 
 Visit your site notifications page to install the new plugins.
 
